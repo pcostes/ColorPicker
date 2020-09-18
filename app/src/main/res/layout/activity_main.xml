@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--RED-->
+    <Button
+        android:id="@+id/red_up"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/green_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/green_up"
+        android:text="@string/up" />
+    <TextView
+        android:id="@+id/red_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/default_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/red_up"
+        app:layout_constraintRight_toRightOf="@id/red_up"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/red_down"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/green_down"
+        app:layout_constraintTop_toBottomOf="@id/green_text"
+        android:text="@string/down" />
+
+    <!--GREEN-->
+    <Button
+        android:id="@+id/green_up"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/green_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/up" />
+    <TextView
+        android:id="@+id/green_text"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="@string/default_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/green_down"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/green_text"
+        android:text="@string/down" />
+
+    <!--BLUE-->
+    <Button
+        android:id="@+id/blue_up"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/green_text"
+        app:layout_constraintLeft_toRightOf="@id/green_up"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="@string/up" />
+    <TextView
+        android:id="@+id/blue_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/default_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/blue_up"
+        app:layout_constraintRight_toRightOf="@id/blue_up"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/blue_down"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/green_down"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/green_text"
+        android:text="@string/down" />
+
+    <!--RESET-->
+    <Button
+        android:id="@+id/reset"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/green_up"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/reset"
+        android:onClick="reset_values" />
+</androidx.constraintlayout.widget.ConstraintLayout>

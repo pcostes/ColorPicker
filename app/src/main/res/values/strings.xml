@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ButtonApp</string>
+    <string name="buttonone_text">This is Button One</string>
+    <string name="default_text">FF</string>
+    <string name="up">+</string>
+    <string name="down">-</string>
+    <string name="reset">RESET</string>
+</resources>
